@@ -14,7 +14,8 @@ import { Provider } from 'react-redux';
 import { cartReducer } from './redux/reducers';
 import { addToCart, removeFromCart, updateQuantity } from './redux/actions';
 
-let store = createStore(cartReducer);
+//let store = createStore(cartReducer);
+  const store = createStore(cartReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 //Import styles
 import './styles/simple-grid.css';

@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:300,400,600');
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .top-menu {
   height: 120px;
   display: flex;
@@ -14,4 +18,56 @@
 
 .icon {
   color: #C4C4C4 !important;
+}
+
+.icon:hover {
+  color: #9C9C9C !important;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-header h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4A4A4A;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.product-header h3 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  color: #838383;
+  margin: 0;
+}
+
+.product-rating {
+  display: inline;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  margin: 0px 4px;
+}
+
+.price-label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #888888;
+
 }

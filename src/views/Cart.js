@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 import products from '../products';
 
+import TopMenu from '../components/TopMenu';
+
 const Cart = () => (
   <div className='cart view'>
-    <p>Cart view</p>
+    <TopMenu />
   </div>
 )
 
