@@ -10,7 +10,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onQuantityChange: (quantity) => {
+    setQuantity: (quantity) => {
       dispatch(setQuantity(ownProps.productId, quantity))
     }
   }

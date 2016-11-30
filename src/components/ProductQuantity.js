@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
-const ProductQuantity = ({ quantity }) => (
-  <div className="product-quantity container">
-    <div className="col-3">-</div>
+import Button from './Button';
+
+const ProductQuantity = ({ quantity, setQuantity }) => (
+  <div className="product-quantity row">
+    <Button text="-" className="col-3 quantity-button" onClick={() => { setQuantity(quantity - 1)}} />
     <div className="col-6">{quantity}</div>
-    <div className="col-3">+</div>
+    <Button text="+" className="col-3 quantity-button" onClick={() => { setQuantity(quantity + 1)}} />
   </div>
 )
 
