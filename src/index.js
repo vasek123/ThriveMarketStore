@@ -1,3 +1,4 @@
+//Import React and react-router
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
@@ -15,13 +16,24 @@ import { addToCart, removeFromCart, updateQuantity } from './redux/actions';
 
 let store = createStore(cartReducer);
 
+//Import styles
+import './styles/simple-grid.css';
+import './styles/main.css';
+
+//Setup App
+const App = () => (
+  <div className="container">
+    <Provider store={store}>
+      <Router history={hashHistory}>
+        <Route path='/' component={Shop} />
+        <Route path='/cart' component={Cart} />
+        <Route path='*' component={NotFound} />
+      </Router>
+    </Provider>
+  </div>
+)
+
 render(
-  <Provider store={store}>
-    <Router history={hashHistory}>
-      <Route path='/' component={Shop} />
-      <Route path='/cart' component={Cart} />
-      <Route path='*' component={NotFound} />
-    </Router>
-  </Provider>,
-  document.getElementById('container')
+  <App />,
+  document.getElementById('app')
 );

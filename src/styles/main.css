@@ -1,0 +1,17 @@
+/*
+ * FONTS
+ * font-family: 'Indie Flower', cursive;
+ * font-family: 'Open Sans', sans-serif;
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:300,400,600');
+
+.top-menu {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #C4C4C4 !important;
+}
