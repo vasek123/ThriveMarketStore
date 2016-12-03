@@ -4,7 +4,7 @@ const PriceLabel = ({ product, quantity, rounded, additionalClassNames }) => {
 
   let price = product.price * (quantity ? quantity : 1);
   if (rounded != undefined && rounded) {
-    price = Math.round(price);
+    price = Math.round(price * 10) / 10;
   }
   let className = "price-label" + (additionalClassNames ? " " + additionalClassNames : "");
 

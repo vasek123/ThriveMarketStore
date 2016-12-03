@@ -15,7 +15,6 @@ const TopMenu = () => (
     <div className="col-8"></div>
 
     <div className="col-1 right">
-      <Icon name="search" size="36px" />
     </div>
 
     <div className="col-1 right">
