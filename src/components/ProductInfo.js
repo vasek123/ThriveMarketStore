@@ -9,7 +9,7 @@ const ProductInfo = ({ product }) => (
       <ProductRating rating={product.rating} />
     </div>
     <div className="col-6 center">
-      <PriceLabel price={product.price} />
+      <PriceLabel product={product} />
     </div>
   </div>
 )

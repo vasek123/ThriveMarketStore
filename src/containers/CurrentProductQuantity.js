@@ -4,14 +4,14 @@ import ProductQuantity from '../components/ProductQuantity';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    quantity: state.cart[ownProps.productId]
+    quantity: state.cart[ownProps.product.id]
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     setQuantity: (quantity) => {
-      dispatch(setQuantity(ownProps.productId, quantity))
+      dispatch(setQuantity(ownProps.product.id, quantity))
     }
   }
 }

@@ -9,7 +9,7 @@ const TopMenu = () => (
   <div className="row top-menu">
 
     <div className="col-2">
-      <Link to="/"><img src={logoImg}></img></Link>
+      <Link to="/"><img className="logo" src={logoImg}></img></Link>
     </div>
 
     <div className="col-8"></div>

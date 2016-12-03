@@ -12,7 +12,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(addToCart(ownProps.productId))
+      dispatch(addToCart(ownProps.product.id))
     }
   }
 }

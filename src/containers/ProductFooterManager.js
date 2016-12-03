@@ -3,8 +3,8 @@ import ProductFooter from '../components/ProductFooter';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    quantity: state.cart[ownProps.productId],
-    productId: ownProps.productId
+    quantity: state.cart[ownProps.product.id],
+    productId: ownProps.product.id
   }
 }
 

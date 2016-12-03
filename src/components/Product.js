@@ -10,7 +10,7 @@ const Product = ({ product }) => (
     <ProductHeader product={product} />
     <ProductImage product={product} />
     <ProductInfo product={product} />
-    <ProductFooterManager productId={product.id} />
+    <ProductFooterManager product={product} />
   </div>
 )
 
